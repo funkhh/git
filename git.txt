@@ -1,0 +1,36 @@
+git init 初始化；完成以后会出现 .git文件；默认是隐藏的
+git status 查看文件状态
+git add 文件名包括后缀名；把文件添加到仓库
+git commit -m "说明" 把文件提交到仓库；
+git diff  查看修改的内容；
+git log 查看提交过的版本信息 git log --pretty=oneline 简略查看；
+git reset --hard id值 跳转到某个版本；
+git reflog 查看修改过的所有命令；
+cat readme.txt  查看版本内容；
+pwd  查看版本路径
+ls -ah查看.git 隐藏文件；
+git checkout -- 文件名；丢弃工作区文件的修改
+git reset HEAD 文件名；可以把添加到暂存区的内容撤销到工作区；
+git rm 文件名
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+git clone git@github.com:funkhh/gitskills.git
+
+Git鼓励大量使用分支：
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+用git log --graph命令可以看到分支合并图。
+git merge --no-ff -m "merge with no-ff" dev  因为本次合并要创建一个新的commit,所以加上-m参数,把commit描述写进去。
+
+
+
