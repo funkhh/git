@@ -35,3 +35,5 @@ git merge --no-ff -m "merge with no-ff" dev  因为本次合并要创建一个新的commit,所
 解除与远程库的关联
  git remote remove  仓库名
 
+添加远程仓库
+git remote add origin git@github.com:funkhh/git.git
