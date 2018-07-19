@@ -37,3 +37,5 @@ git merge --no-ff -m "merge with no-ff" dev  因为本次合并要创建一个新的commit,所
 
 添加远程仓库
 git remote add origin git@github.com:funkhh/git.git
+dev分支远程仓库的链接
+git checkout -b dev origin/dev
